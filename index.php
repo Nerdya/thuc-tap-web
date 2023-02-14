@@ -11,13 +11,13 @@
 <body>
 <?php
 
-$views = 'private/views';
-$sections = $views.'/sections';
-$components = $views.'/components';
+$mode = '/admin'; // or user
+$view = 'app/views'.$mode;
+$layout = $view.'/layout';
 $page = $_GET['page'] ?? '';
 
-include $sections.'/header.php';
-include $sections.'/content-wrapper.php';
+include $layout.'/header.php';
+include $layout.'/content-wrapper.php';
 
 ?>
 </body>

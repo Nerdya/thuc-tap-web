@@ -2,14 +2,14 @@
 <?php
 switch ($page) {
     case 'student':
-        include $components.'/student/student.php';
+        include $view.'/student/student.php';
         break;
     case 'student/add':
-        include $components.'/student/student_add.php';
+        include $view.'/student/student_add.php';
         break;
     default:
         if ($page == '') {
-            include $components.'/home/home.php';
+            include $view.'/home/home.php';
         }
         break;
 }
