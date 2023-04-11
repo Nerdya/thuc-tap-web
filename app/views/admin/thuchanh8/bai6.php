@@ -13,11 +13,18 @@ $result = mysqli_query($conn, "SELECT * FROM khach_hang");
   </tr>
   <?php
   while ($row = mysqli_fetch_row($result)) {
+    if ($row[2]) {
+      $src_img = "app/assets/img/bai5/girl.png";
+    } else {
+      $src_img = "app/assets/img/bai5/boy.png";
+    }
   ?>
   <tr>
     <td><?=$row[0]?></td>
     <td><?=$row[1]?></td>
-    <td><?=$row[2]?></td>
+    <td>
+      <img style="width: 60px" src="<?=$src_img?>" alt="<?=$row[2]?>"/>
+    </td>
     <td><?=$row[3]?></td>
     <td><?=$row[4]?></td>
   </tr>

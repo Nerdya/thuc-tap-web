@@ -49,6 +49,9 @@ switch ($page) {
     case 'thuchanh8/bai5':
         include $view.'/thuchanh8/bai5.php';
         break;
+    case 'thuchanh8/bai6':
+        include $view.'/thuchanh8/bai6.php';
+        break;
     case 'student/add':
         include $view.'/student/student_add.php';
         break;
