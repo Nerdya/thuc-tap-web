@@ -1,15 +1,15 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "", "ql_ban_sua");
-$result = mysqli_query($conn, "SELECT * FROM hang_sua");
+$result = mysqli_query($conn, "SELECT * FROM khach_hang");
 ?>
-<h2 class="text-center">Thông tin hàng sữa</h2>
+<h2 class="text-center">Thông tin khách hàng</h2>
 <table class="table">
   <tr>
-    <th scope="col">Mã HS</th>
-    <th scope="col">Tên hãng sữa</th>
+    <th scope="col">Mã KH</th>
+    <th scope="col">Tên khách hàng</th>
+    <th scope="col">Giới tinh</th>
     <th scope="col">Địa chỉ</th>
-    <th scope="col">Điện thoại</th>
-    <th scope="col">Email</th>
+    <th scope="col">Số điện thoại</th>
   </tr>
   <?php
   while ($row = mysqli_fetch_row($result)) {
