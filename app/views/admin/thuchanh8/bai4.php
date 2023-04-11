@@ -3,7 +3,7 @@ $conn = mysqli_connect("localhost", "root", "", "ql_ban_sua");
 $result = mysqli_query($conn, "SELECT * FROM hang_sua");
 ?>
 <h2 class="text-center">Thông tin hàng sữa</h2>
-<table class="table">
+<table class="table table-bordered border-secondary">
   <tr>
     <th scope="col">Mã HS</th>
     <th scope="col">Tên hãng sữa</th>
